@@ -14,7 +14,7 @@ function Header() {
             <h1 className="text-5xl p-2 pb-5 md:pb-4">
                 Todo
             </h1>
-
+            
             <div className="flex items-center space-x-5 flex-1 justify-end w-full">
                 {/* Search Box */}
                 <form className="flex items-center space-x-5 bg-white rounded-md p-2 shadow-md flex-1 md:flex-initial">
