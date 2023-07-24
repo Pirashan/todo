@@ -21,11 +21,12 @@ function Header() {
 
         const fetchSuggestionFunc = async () => {
             const suggestion = await fetchSuggestion(board);
+            setSuggestion(suggestion);
             setLoading(false);
-        }
+        };
 
         fetchSuggestionFunc();
-    }, [board])
+    }, [board]);
 
   return (
     <header>
