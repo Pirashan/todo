@@ -94,7 +94,7 @@ function TaskTypeRadioGroup() {
             </RadioGroup>
         </div>
     </div>
-  )
+  );
 }
 
 export default TaskTypeRadioGroup
