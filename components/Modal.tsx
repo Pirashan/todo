@@ -91,12 +91,12 @@ function Modal() {
               }} 
               className='w-full border border-gray-300 rounded-md outline-none p-5 focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2'>
                 <PhotoIcon className='h-6 w-6 mr-2 inline-block'/>
-                UploadImage
+                Upload Image
               </button>
 
               {image && (
                 <Image
-                alt="UploadedImage"
+                alt="Uploaded Image"
                 width={200}
                 height={200}
                 className="w-full h-44 object-cover mt-2 filter hover:grayscale transition-all duration-150 cursor-not-allowed"
@@ -115,8 +115,7 @@ function Modal() {
                 if (!e.target.files![0].type.startsWith("image/")) return;
                 setImage(e.target.files![0]);
               }}
-              >
-              </input>
+              />
             </div>
 
             <div className='mt-4'>

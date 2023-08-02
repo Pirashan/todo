@@ -9,17 +9,18 @@ interface BoardState {
     setBoardState: (board:Board) => void;
     updateTodoInDB: (todo: Todo, columnId: TypedColumn) => void;
     newTaskInput: string;
-    setNewTaskInput: (input: string) => void;
     newTaskType: TypedColumn;
-    setNewTaskType: (columnId: TypedColumn) => void;
     image: File | null;
-    setImage: (image: File | null) => void;
 
     searchString: string;
     setSearchString: (searchString: string) => void;
 
-    addTask: (todo: string, columnId: TypedColumn, image?:File | null) => void;
+    addTask: (todo: string, columnId: TypedColumn, image?: File | null) => void;
     deleteTask: (taskIndex: number, todoId: Todo, id: TypedColumn) => void;
+
+    setNewTaskInput: (input: string) => void;
+    setNewTaskType: (columnId: TypedColumn) => void;
+    setImage: (image: File | null) => void;
 }
 
 export const useBoardStore = create<BoardState>((set, get) => ({
